@@ -1,0 +1,1 @@
+export function AboutPage() { return <div className="page"><div className="eyebrow">About</div><h1>关于这个博客</h1><p className="lead">这是一个用来沉淀工程经验和学习笔记的个人空间。文章以 Markdown 编写，和代码一起通过 Git 管理。</p><h2>写些什么</h2><p>软件工程、前端开发、工具实践，以及那些值得长期记住的问题和答案。</p></div> }
