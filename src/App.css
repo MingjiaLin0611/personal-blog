@@ -1,4 +1,4 @@
 .hero { padding: 48px 0 12px; }
 .hero-actions { display: flex; gap: 12px; margin-top: 32px; }
-.button { display: inline-block; padding: 11px 16px; border-radius: 7px; background: #1f6f5b; color: white; text-decoration: none; font-weight: 700; }
-.button.secondary { background: transparent; color: #1f6f5b; border: 1px solid #1f6f5b; }
+.button { display: inline-block; padding: 11px 16px; border-radius: 7px; background: var(--color-accent); color: var(--color-on-accent); text-decoration: none; font-weight: 700; }
+.button.secondary { background: transparent; color: var(--color-accent); border: 1px solid var(--color-accent); }
