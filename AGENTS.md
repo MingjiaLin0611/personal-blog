@@ -30,7 +30,7 @@ The current project does not use a backend, database, CMS, MDX, server-side rend
 
 ## Visual Design System
 
-The visual language is a restrained personal engineering notebook: readable, warm, utilitarian, and content-focused. Do not introduce a marketing-site visual style, excessive animation, gradients, or decorative UI without explicit approval.
+The visual language is a restrained personal engineering notebook: readable, monochrome, utilitarian, and content-focused. Use only black, white, and neutral shades of gray throughout the interface. Do not introduce a marketing-site visual style, excessive animation, gradients, or decorative UI without explicit approval.
 
 ### Color tokens
 
@@ -38,14 +38,14 @@ Define shared colors as CSS custom properties in `src/index.css` and reuse the t
 
 ```css
 :root {
-  --color-background: #f6f3ed;
-  --color-surface: #fbfaf7;
+  --color-background: #f5f5f5;
+  --color-surface: #ffffff;
   --color-text: #252525;
-  --color-muted: #625e57;
-  --color-subtle: #777168;
-  --color-border: #ddd6ca;
-  --color-accent: #1f6f5b;
-  --color-accent-soft: #e5eee9;
+  --color-muted: #595959;
+  --color-subtle: #666666;
+  --color-border: #d9d9d9;
+  --color-accent: #000000;
+  --color-accent-soft: #e8e8e8;
   --color-on-accent: #ffffff;
   --color-code-background: #252525;
 }
@@ -61,7 +61,10 @@ Define shared colors as CSS custom properties in `src/index.css` and reuse the t
 - `--color-on-accent` is used for text displayed on the accent color.
 - `--color-code-background` is used for fenced code blocks.
 
-New colors require a clear design reason and should be added as named tokens before use.
+New colors must remain within the black, white, and neutral gray palette (equal red, green, and blue channel values), require a clear design reason, and be added as named tokens before use. Do not use tinted grays or chromatic accent colors.
+
+- Apply this palette to backgrounds, text, borders, shadows, icons, links, tags, code highlighting, and all interactive states.
+- Distinguish hover, focus, active, disabled, and status states using grayscale contrast, borders, underlines, icons, or text labels while preserving readability and visible keyboard focus.
 
 ### Typography scale
 
