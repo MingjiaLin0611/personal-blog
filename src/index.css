@@ -1,4 +1,4 @@
-:root { --color-background: #f5f5f5; --color-surface: #ffffff; --color-text: #252525; --color-muted: #595959; --color-subtle: #666666; --color-border: #d9d9d9; --color-accent: #000000; --color-accent-soft: #e8e8e8; --color-on-accent: #ffffff; --color-code-background: #252525; color-scheme: light; accent-color: var(--color-accent); font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: var(--color-text); background: var(--color-background); font-synthesis: none; }
+:root { --color-background: #f5f5f5; --color-surface: #ffffff; --color-text: #252525; --color-muted: #595959; --color-subtle: #666666; --color-border: #d9d9d9; --color-accent: #000000; --color-accent-soft: #e8e8e8; --color-on-accent: #ffffff; --color-code-background: #252525; color-scheme: light; accent-color: var(--color-accent); font-family: 'Noto Sans SC Variable', 'Noto Sans SC', sans-serif; color: var(--color-text); background: var(--color-background); font-synthesis: none; }
 * { box-sizing: border-box; }
 body { margin: 0; }
 a { color: inherit; }
@@ -7,10 +7,10 @@ a { color: inherit; }
 .site-header, .site-footer { border-color: var(--color-border); border-style: solid; border-width: 0 0 1px; }
 .site-header { background: var(--color-background); position: sticky; top: 0; z-index: 2; }
 .nav, .footer-inner, .page { max-width: 980px; margin: auto; padding: 0 24px; }
-.nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.brand { font-weight: 800; text-decoration: none; letter-spacing: -.04em; font-size: 1.2rem; }
-.nav-links { display: flex; gap: 20px; color: var(--color-muted); }
+.nav { min-height: 72px; display: flex; align-items: center; justify-content: flex-start; gap: 24px; }
+.nav-links { display: flex; align-items: center; gap: 10px; color: var(--color-muted); }
 .nav-links a { text-decoration: none; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { font-weight: 700; color: var(--color-accent); }
 .nav-links a:hover { color: var(--color-accent); text-decoration: underline; text-underline-offset: .25em; }
 .page { padding-top: 72px; padding-bottom: 72px; min-height: calc(100vh - 145px); }
 .eyebrow { color: var(--color-accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }

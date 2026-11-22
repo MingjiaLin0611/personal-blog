@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { HomePage } from './pages/HomePage'
 import { PostsPage } from './pages/PostsPage'
@@ -15,7 +15,7 @@ export default function App() {
           <Route path="/posts" element={<PostsPage />} />
           <Route path="/posts/:slug" element={<PostPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="*" element={<main className="page"><h1>页面不存在</h1><Link to="/">回到首页</Link></main>} />
+          <Route path="*" element={<div className="page" />} />
         </Routes>
       </Layout>
     </BrowserRouter>
